@@ -11,7 +11,7 @@ let package = Package(
             targets: ["Postal"]),
     ],
     dependencies: [
-        .package(url: "../libetpan", from: "0.1.9"),
+        .package(url: "https://github.com/jseibert/libetpan.git", from: "0.1.0"),
         .package(url: "https://github.com/antitypical/Result.git", from: "3.2.0")
     ],
     targets: [
@@ -20,6 +20,12 @@ let package = Package(
           dependencies: ["libetpan", "Result"],
           path: "Postal",
           exclude: ["ReactiveSwift"]
+        ),
+        .target(
+          name: "PostalTests",
+          dependencies: ["Postal"],
+          path: "PostalTests",
+          exclude: ["Resources"]
         )
     ]
 )
