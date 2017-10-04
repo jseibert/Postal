@@ -23,6 +23,7 @@
 //
 
 import Swift
+import Foundation
 import libetpan
 
 private typealias Progress = @convention(c) (Int, Int, UnsafeMutableRawPointer?) -> Void
