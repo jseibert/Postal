@@ -11,7 +11,7 @@ let package = Package(
             targets: ["Postal"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/jseibert/libetpan.git", from: "0.1.0"),
+        .package(url: "https://github.com/jseibert/libetpan.git", from: "0.1.1"),
         .package(url: "https://github.com/antitypical/Result.git", from: "3.2.0")
     ],
     targets: [
