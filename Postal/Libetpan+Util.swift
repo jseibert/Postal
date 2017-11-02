@@ -25,7 +25,7 @@
 import Foundation
 import libetpan
 
-extension String {
+public extension String {
     static func fromZeroSizedCStringMimeHeader(_ bytes: UnsafeMutablePointer<Int8>?) -> String? {
         guard bytes != nil else { return nil }
         
@@ -102,15 +102,15 @@ private func arrayGenerator<Element>(unsafeArray array: UnsafePointer<carray>, o
     }
 }
 
-func sequence<Element>(_ unsafeList: UnsafePointer<clist>, of: Element.Type) -> AnySequence<Element> {
+public func sequence<Element>(_ unsafeList: UnsafePointer<clist>, of: Element.Type) -> AnySequence<Element> {
     return AnySequence { return listGenerator(unsafeList: unsafeList, of: of) }
 }
 
-func pointerSequence<Element>(_ unsafeList: UnsafePointer<clist>, of: Element.Type) -> AnySequence<UnsafePointer<Element>> {
+public func pointerSequence<Element>(_ unsafeList: UnsafePointer<clist>, of: Element.Type) -> AnySequence<UnsafePointer<Element>> {
     return AnySequence { return pointerListGenerator(unsafeList: unsafeList, of: of) }
 }
 
-func sequence<Element>(_ unsafeArray: UnsafePointer<carray>, of: Element.Type) -> AnySequence<Element> {
+public func sequence<Element>(_ unsafeArray: UnsafePointer<carray>, of: Element.Type) -> AnySequence<Element> {
     return AnySequence { return arrayGenerator(unsafeArray: unsafeArray, of: of) }
 }
 

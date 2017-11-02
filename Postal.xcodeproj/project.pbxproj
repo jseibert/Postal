@@ -200,7 +200,7 @@
 		F7F03A061D4BA5A70083397F /* IMAPSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = IMAPSession.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F7F03A071D4BA5A70083397F /* IMFError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IMFError.swift; sourceTree = "<group>"; };
 		F7F03A081D4BA5A70083397F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Postal-iOS/Info.plist"; sourceTree = "<group>"; };
-		F7F03C661D4BA5A80083397F /* Libetpan+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = "Libetpan+Util.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F7F03C661D4BA5A80083397F /* Libetpan+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = "Libetpan+Util.swift"; sourceTree = "<group>"; };
 		F7F03C671D4BA5A80083397F /* Logger+IMAP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Logger+IMAP.swift"; sourceTree = "<group>"; };
 		F7F03C681D4BA5A80083397F /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		F7F03C691D4BA5A80083397F /* MailData+Decode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = "MailData+Decode.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };

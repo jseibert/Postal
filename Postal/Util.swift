@@ -43,7 +43,7 @@ extension Bool {
     var int64Value: Int32 { return self ? 1 : 0 }
 }
 
-extension String {
+public extension String {
     static func fromUTF8CString(_ cstring: UnsafePointer<CChar>?) -> String? {
         if let cstring = cstring {
             return String(validatingUTF8: cstring)
@@ -56,7 +56,7 @@ extension String {
     }
 }
 
-extension String {
+public extension String {
     static func stringFromCStringDetectingEncoding(_ CString: UnsafePointer<CChar>, length: Int, suggestedEncodings: Set<String.Encoding> = [], disallowedEncodings: Set<String.Encoding> = []) -> (string: String, encoding: String.Encoding, lossy: Bool)? {
         
         let data = Data(bytesNoCopy: UnsafeMutableRawPointer(mutating: CString), count: length, deallocator: .none)
